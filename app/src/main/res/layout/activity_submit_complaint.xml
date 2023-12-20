@@ -1,0 +1,88 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titleInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/toolbar"
+        android:hint="Title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/categoryRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleInputLayout"
+        android:layout_marginTop="16dp">
+
+        <!-- Radio buttons for different categories -->
+        <RadioButton
+            android:id="@+id/categoryGradingDisputes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grading Disputes"/>
+        <RadioButton
+        android:id="@+id/categoryTeachingMethods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ineffective Teaching Methods"/>
+        <RadioButton
+            android:id="@+id/categoryResources"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lack of Resources for Learning"/>
+        <RadioButton
+            android:id="@+id/categoryAdminDecisions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unfair Administrative Decisions"/>
+        <RadioButton
+            android:id="@+id/categoryTuitionFees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Issues with Tuition and Fees"/>
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/descriptionInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/categoryRadioGroup"
+        android:layout_marginTop="16dp"
+        android:hint="Description">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/descriptionInputLayout"
+        android:layout_marginTop="16dp"
+        android:text="Submit Complaint" />
+
+</RelativeLayout>
