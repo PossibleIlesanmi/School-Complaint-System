@@ -11,3 +11,5 @@ Submit Complaint Screen: Intuitive interface for users to submit complaints, inc
 Complaint Detail Screen: In-depth information on each complaint, ensuring transparency and accountability throughout the resolution process.
 
 My Complaints Screen: A personalized space where users can track the status and details of their submitted complaints, creating a seamless experience.
+
+Java/Andriod Studio
